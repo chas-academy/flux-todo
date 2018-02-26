@@ -1,4 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(<div>Flux Starter</div>, document.getElementById('fluxtodo'));
+import TodoContainer from './containers/TodoContainer';
+
+ReactDOM.render(<TodoContainer />, document.getElementById('fluxtodo'));
+
+// REMOVE ME LATER
+import TodoActions from './data/TodoActions';
+
+TodoActions.addTodo('Tvätta');
+TodoActions.addTodo('Städa');
+TodoActions.addTodo('Lära mig Flux');
